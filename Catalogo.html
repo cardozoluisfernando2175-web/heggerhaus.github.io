@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Egger Haus</title>
+</head>
+<body>
+    
+
+    <header class="page-nav">
+        <a href="index.html">
+            <h1>EGGER HAUS</h1>
+        </a>
+        <button class="hamburger" aria-label="Menú" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Catalogo.html">Catálogo</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="product-container" data-nombre="Mueble de cocina flotante" data-precio="$109" data-descripcion="Mueble de cocina flotante moderno, ideal para cocinas pequeñas. Fabricado en melamina resistente. Medidas: 120x60x40 cm.">
+            <h3>Mueble de cocina flotante</h3>
+            <img src="mueble_1.png" />
+            <h2>$109</h2>
+            <button class="button-add" data-nombre="Mueble de cocina flotante" data-precio="$109">Reservar</button>
+        </div>
+
+        <div class="product-container" data-nombre="Mueble de cocina (mesones)" data-precio="$139" data-descripcion="Mueble completo para cocinas minimalistas, con detalles modernos y materiales de la más alta calidad">
+            <h3>Mueble de cocina (mesones)</h3>
+            <img src="mueble_2.png" />
+            <h2>$139</h2>
+            <button class="button-add" data-nombre="Mueble de cocina (mesones)" data-precio="$139">Reservar</button>
+        </div>
+
+        <div class="product-container" data-nombre="Mueble de cocina completo" data-precio="$149" data-descripcion="Muebles bien estructurados para cocina moderna con diseños minimalistas hecho con la mejor melamina de todo el país">
+            <h3>Mueble de cocina completo</h3>
+            <img src="mueble_3.png" />
+            <h2>$149</h2>
+            <button class="button-add" data-nombre="Mueble de cocina completo" data-precio="$149">Reservar</button>
+        </div>
+
+        <div class="product-container" data-nombre="Living" data-precio="$139">
+            <h3>Living</h3>
+            <img src="mueble_4.png" />
+            <h2>$139</h2>
+            <button class="button-add" data-nombre="Living" data-precio="$139">Reservar</button>
+        </div>
+
+        <div class="product-container" data-nombre="Mesa para sala minimalista" data-precio="$39">
+            <h3>Mesa para sala minimalista</h3>
+            <img src="mueble_5.png" />
+            <h2>$39</h2>
+            <button class="button-add" data-nombre="Mesa para sala minimalista" data-precio="$39">Reservar</button>
+        </div>
+
+        <div class="product-container" data-nombre="Muebleria para baño" data-precio="$99">
+            <h3>Muebleria para baño</h3>
+            <img src="mueble_6.png" />
+            <h2>$99</h2>
+            <button class="button-add" data-nombre="Muebleria para baño" data-precio="$99">Reservar</button>
+        </div>
+    </div>
+    
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Imagen del producto">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title">Nombre del producto</h3>
+                    <p id="modal-price">$0</p>
+                    <p id="modal-description">
+                        Descripción no disponible.
+                    </p>
+                    <button class="button-add" id="modal-reserve">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/tuusuario" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/tuusuario" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/59176716759" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Egger Haus. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
